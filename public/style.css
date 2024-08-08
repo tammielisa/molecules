@@ -1,0 +1,163 @@
+/* General styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: lightseagreen;
+    font-family: "Lucida Console", monospace;
+}
+
+.header {
+    order: 1;
+    display: flex;
+    flex: 1;
+    flex-grow: 1; /* Allow item to grow */
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100px;
+    color: #ff0000;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "Lucida Console", monospace;
+    text-align: left;
+}
+
+#footer {
+    font-size: 10px;
+    color: white;
+    margin-left: 10px;
+    line-height: 3px;
+}
+
+#appcontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#molcanvas {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 10px solid #ff0000;
+    border-radius: 30px;
+}
+
+#appcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-grow: 1; /* Allow item to grow */
+    flex-shrink: 1;
+    align-items: flex-end;
+    min-width: 0;
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 3%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.controls {
+    order: 1;
+    display: block;
+    flex-direction: row;
+    max-height: 150px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.control-button {
+    order: 1;
+    width: 60px;
+    padding: 5px 5px;
+    max-height: 100px;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    font-size: 50px;
+    text-shadow: 1px 1px gray;
+    text-align: center;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: gray;
+}
+
+.infobox {
+    order: 2;
+    padding: 3px;
+    height: 150px;
+    width: 200px;
+    color: black;
+    background-color: lightyellow;
+    border: 5px solid #ff0000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: "Lucida Console", monospace;
+    text-align: left;
+}
+
+.infobox p {
+    margin: 5px 0;
+}
+
+#modelName {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.colorkey {
+    order: 3;
+    padding: 3px;
+    line-height: 5px;
+    max-height: 200px;
+    width: 100px;
+    background-color: black;
+    border: 5px solid #ff0000;
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 5px;
+    white-space: normal;
+    font-family: "Lucida Console", monospace;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    #molcanvas,
+    .controls,
+    .infobox,
+    .colorkey {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control-button {
+        margin-bottom: 10px;
+    }
+}
